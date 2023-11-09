@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!--  CSS -->
+        <link rel="stylesheet" href="../css/index.css">
+        <!--   FONTS   -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+
+        <!--   ICONS   -->
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+            rel="stylesheet">
+
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+
+    </head>
+
+    <body>
+        <div class="grid-container">
+            <!-- Header -->
+            <header class="header">
+                <div class="menu-icon" onclick="openSidebar()">
+                    <i class="bx bx-menu"></i>
+                </div>
+                <div class="header-left">
+                    <i class="bx bx-search"></i>
+                </div>
+                <div class="header-right">
+                    <i class="bx bx-bell"></i>
+                    <i class="bx bx-envelope"></i>
+                    <i class="bx bx-user-circle"></i>
+                </div>
+            </header>
+
+            <!--SideBar-->
+            <aside id="sidebar">
+                <div class="sidebar-title">
+                    <div class="sidebar-brand">
+                        <img src="../images/Emblem_of_Tanzania-2048x2375.png" alt>
+                        <h6>Ministry of Energy</h6>
+                    </div>
+                    <div class="close"><i class="bx bx-x-circle" onclick="closeSidebar()"></i></div>
+                </div>
+
+                <div class="sidebar">
+                    <ul class="sidebar-list">
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class="bx bxs-dashboard icon"></i>
+                                <span class="text nav-text">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class="bx bx-user icon"></i>
+                                <span class="text nav-text">Profile</span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class="bx bx-clipboard list icon"></i>
+                                <span class="text nav-text">Graduates</span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class="bx bx-pie-chart-alt icon"></i>
+                                <span class="text nav-text">Analystic</span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class="bx bx-cog icon" ></i>
+                                <span class="text nav-text">Settings</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+            </aside>
+
+            <!--MAIN-->
+            <main class="main-container">
+                <div class="main-title">
+                    <h3 class="font-weight-bold">Dashboard</h3>
+                </div>
+
+                <div class="main-cards">
+
+                    <div class="card">
+                        <div class="card-inner">
+                            <h5 class="text-primary">Total Graduates</h5>
+                            <i class="bx bxs-graduation" ></i>
+                        </div>
+                        <div class="number">29</div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-inner">
+                            <h5 class="text-primary">Users</h5>
+                            <i class="bx bx-group" ></i>
+                        </div>
+                        <div class="number">49</div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-inner">
+                            <h5 class="text-primary">Oil Graduates</h5>
+                            <i class="bx bxs-graduation" ></i>
+                        </div>
+                        <div class="number">24</div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-inner">
+                            <h5 class="text-primary">Gas Graduates</h5>
+                            <i class="bx bxs-graduation" ></i>
+                        </div>
+                        <div class="number">249</div>
+                    </div>
+                </div>
+
+                <!--  CHARTS -->
+
+                <div class="charts">
+                    <div class="charts-card">
+                        <h5 class="chart-title">Graduates</h5>
+                        <div id="bar-chart"></div>
+                    </div>
+
+                    <div class="charts-card">
+                        <h5 class="chart-title">Users</h5>
+                        <div id="doughnut-chart"></div>
+                    </div>
+                </div>
+            </main>
+
+        </div>
+
+        <!--  JS -->
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.44.0/apexcharts.min.js"></script>
+        <script src="../js/index.js"></script>
+    </body>
+</html>
